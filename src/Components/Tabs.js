@@ -11,7 +11,7 @@ const Tabs = () => {
         <Button colorScheme='purple' size="md" >New Arrivals</Button>
         <Button colorScheme='blue' size="md" >MBBS</Button>
         <Button colorScheme='purple' size="md" >Post Graduation</Button>
-        <Button colorScheme='blue' size="md" >SS</Button>
+        <Button colorScheme='blue' size="md" >Super Speciality</Button>
         <Button colorScheme='purple' size="md" >Medical College</Button>
         <Button colorScheme='blue' size="md" >Courses</Button>
         <Button colorScheme='purple' size="md" >Know Your College</Button>
