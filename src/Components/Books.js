@@ -1,4 +1,4 @@
-import { SimpleGrid } from '@chakra-ui/react';
+import { SimpleGrid,Text } from '@chakra-ui/react';
 import BookCard from '../../src/Components/BookCard';
 import React from 'react';
 
@@ -11,10 +11,15 @@ export default function Books() {
     // </div>
     <>
    
-    <Text>
- NewArrivals
+    <Text textAlign={'center'} fontSize={{base: '2xl', sm:'4xl'}} fontWeight={'bold'} color={'gray.600'}>
+        NewArrivals
     </Text>
-   <SimpleGrid columns={3} spacing={"10px"}>
+   <SimpleGrid columns={{base: 1, sm:3}} spacing={"2px"}>
+    <BookCard/>
+    <BookCard/>
+    <BookCard/>
+   </SimpleGrid> 
+   <SimpleGrid columns={{base: 1, sm:3}} spacing={"2px"}>
     <BookCard/>
     <BookCard/>
     <BookCard/>

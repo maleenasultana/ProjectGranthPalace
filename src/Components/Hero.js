@@ -1,14 +1,15 @@
 'use client';
 
 import React from 'react';
-import About from "../Components/About"
+
 import { Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-ui/react';
+
 
 export default function WithVideoBackground() {
   return (
     <Flex
       w={'full'}
-      h={'100vh'}
+      h={'400px'}
       position="relative"
       overflow="hidden"
     >
@@ -19,7 +20,7 @@ export default function WithVideoBackground() {
         style={{
           position: 'absolute',
           width: '100%',
-          height: '700px',
+          height: '400px',
           objectFit: 'fill',
           zIndex: -1,
         }}
@@ -30,7 +31,7 @@ export default function WithVideoBackground() {
       <VStack
         w={'full'}
         justify={'center'}
-        px={useBreakpointValue({ base: 4, md: 8 })}
+        px={useBreakpointValue({ base: 2, md: 4 })}
         bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
       >
         <VStack maxW={'2xl'} align={'flex-start'} spacing={6}>
@@ -43,23 +44,27 @@ export default function WithVideoBackground() {
             {/* Your content here */}
           </Text>
           <Flex direction={'row'}>
-            {/* <Button
-              bg={'blue.400'}
-              rounded={'full'}
-              color={'white'}
-              _hover={{ bg: 'blue.500' }}
-            >
-              Show me more
-            </Button> */}
-            {/* <Button
+          {/* <Button
               bg={'whiteAlpha.200'}
               rounded={'full'}
               color={'white'}
               _hover={{ bg: 'whiteAlpha.500' }}
-              onClick={About}
+              onClick={redirectToPage1}
+              px={4}
             >
-              About
+              Contact Us
+            </Button>
+
+            <Button
+              bg={'whiteAlpha.200'}
+              rounded={'full'}
+              color={'white'}
+              _hover={{ bg: 'whiteAlpha.500' }}
+              onClick={redirectToPage}
+            >
+           About Us
             </Button> */}
+
           </Flex>
         </VStack>
       </VStack>

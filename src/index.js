@@ -5,16 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import { ChakraProvider } from '@chakra-ui/react'
+import { BrowserRouter} from 'react-router-dom';
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
 root.render(
-  <StrictMode>
+
+        <BrowserRouter>
     <ChakraProvider>
     <ColorModeScript />
-    <App />
+
+     <App />
     </ChakraProvider>
-  </StrictMode>
+   
+    </BrowserRouter>
+  
 );
 
 // If you want your app to work offline and load faster, you can change
