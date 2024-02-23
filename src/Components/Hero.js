@@ -1,12 +1,25 @@
 'use client';
 
 import React from 'react';
-
-import { Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-ui/react';
+import Features from './Features'
+import NewArrivals from "./NewArrivals"
+import { Flex,Box, Text, VStack, useBreakpointValue } from '@chakra-ui/react';
+import Books from './Books';
+import PostGraduation from './PostGraduation';
+import SS from './SS';
+import MedicalCollege from './Medical College';
+import Courses from './Courses';
+import Bds from './Bds';
+import Bams from './Bams';
+import KnowyourCollege from './KnowyourCollege';
+import Contact from './Contact';
+import Footer from "./Footer";
 
 
 export default function WithVideoBackground() {
   return (
+    <>
+   
     <Flex
       w={'full'}
       h={'400px'}
@@ -68,7 +81,22 @@ export default function WithVideoBackground() {
           </Flex>
         </VStack>
       </VStack>
-    </Flex>
+    </Flex> 
+    <Box>
+      <Features/>
+       <Books/>
+      <NewArrivals/>
+      <PostGraduation/>
+      <SS/>
+      <MedicalCollege/>
+      <Courses/>
+      <Bds/>
+      <Bams/>
+      <KnowyourCollege/>
+      <Contact/>
+      <Footer/>
+    </Box>
+    </>
   );
 }
 

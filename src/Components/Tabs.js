@@ -7,7 +7,8 @@ import {Box} from '@chakra-ui/react'
 
 const Tabs = () => {
   return (
-    <Box className='bg' direction ={{base: 'row', sm:'column'}} px={4}>
+    <Box 
+    transition='transform 0.3s ease-in-out' display={{ base: "sm", sm: "xl" }} className='bg' flexDirection={{base:'column', md:'row'}} px={4}>
         <a href="/newarrivals" className='link'>NewArrivals</a>
         <a href="/books"  className='link'>MBBS</a>
         <a href="/postgraduation"  className='link'>Post Graduation</a>
