@@ -17,13 +17,13 @@ const Card = ({ heading, description, icon, href }) => {
     React.createElement(Box, {
       maxW: {
         base: 'full',
-        md: '275px'
+        md: '200px'
       },
       w: 'full',
       borderWidth: "2px",
-      boxShadow:"lg",
+      boxShadow:"xl",
       shadowColor:"gray",
-      borderRadius: "lg",
+      borderRadius: "xl",
       overflow: "hidden",
       p: 5,
       _hover:{
@@ -54,7 +54,7 @@ const Card = ({ heading, description, icon, href }) => {
       colorScheme: 'blue',
       size: 'sm',
       href: href
-    }, "Learn more")))
+    }, "")))
   );
 };
 

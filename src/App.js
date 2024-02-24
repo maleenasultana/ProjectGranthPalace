@@ -6,12 +6,12 @@ import Footer from '../src/Components/Footer';
 import Hero from '../src/Components/Hero';
 import Text from './Components/Text';
 import Features from '../src/Components/Features';
-import Books from '../src/Components/Books';
+import Books from './Components/NewArrivals';
 import './App.css';
-import whatsappimage from '../src/whatsappimage.png';
+import whatsappimage from './whatsapp.jpg';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import NewArrivals from './Components/NewArrivals';
+import NewArrivals from './Components/Books';
 import PostGraduation from './Components/PostGraduation';
 import SS from './Components/SS';
 import MedicalCollege from './Components/Medical College';
@@ -44,7 +44,7 @@ function App() {
       </Routes>
 
       <div>
-        <a href="https://wa.me/9975042526" target="_blank">
+        <a href="https://wa.me/919975042526" target="_blank">
           {' '}
           <img src={whatsappimage} alt="..." className="wimage" />
         </a>

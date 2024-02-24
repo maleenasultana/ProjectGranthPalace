@@ -3,15 +3,35 @@ background-color: rgb(173, 115, 227);
 display: flex;
 justify-content: space-between;
 }
-.link{
+/* .link{
     margin-right: 25px;
     width: auto;
     height: 20px;
      border: 1px;
      border-color: black;
      border-radius: 5px;
+} */
+.link {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color:rgba(144, 80, 203, 0.643) ;
+    color: #0b143c;
+    padding: 2px 6px;
+    border: 1px;
+    border-bottom: whitesmoke;
+    border-color: rgb(226, 209, 209);
+    border-radius: 5px;
+    box-shadow: darkcyan 2px;
+    width:auto;
+    height: 20px;
+    text-align: center;
+    box-shadow: wheat;
+    margin-bottom: 3px;
+
+
 }
 .link:hover{
-    color: brown;
+    color: rgb(237, 24, 152);
     font-weight: bold;
+    transform: scale(1.2);
 }

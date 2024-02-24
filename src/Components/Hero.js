@@ -2,9 +2,9 @@
 
 import React from 'react';
 import Features from './Features'
-import NewArrivals from "./NewArrivals"
+import NewArrivals from "./Books"
 import { Flex,Box, Text, VStack, useBreakpointValue } from '@chakra-ui/react';
-import Books from './Books';
+import Books from './NewArrivals';
 import PostGraduation from './PostGraduation';
 import SS from './SS';
 import MedicalCollege from './Medical College';
@@ -88,11 +88,11 @@ export default function WithVideoBackground() {
       <NewArrivals/>
       <PostGraduation/>
       <SS/>
-      <MedicalCollege/>
-      <Courses/>
+      {/* <MedicalCollege/> */}
+      {/* <Courses/> */}
       <Bds/>
       <Bams/>
-      <KnowyourCollege/>
+      {/* <KnowyourCollege/> */}
       <Contact/>
       <Footer/>
     </Box>

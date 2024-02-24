@@ -1,6 +1,8 @@
 
 'use client';
-
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
+import { AiFillHome } from "react-icons/ai";
 import { useState } from 'react';
 import "./Navbar.css" ;
 
@@ -62,7 +64,7 @@ export default function Nav() {
            
                   
               <Menu>
-              <MenuButton
+              {/* <MenuButton
                   as={Button}
                   rounded={'full'}
                   variant={'link'}
@@ -72,8 +74,8 @@ export default function Nav() {
                     size={'sm'}
                     src={"../../th.png"}
                   />
-                </MenuButton>
-                <MenuButton
+                </MenuButton> */}
+                {/* <MenuButton
                   as={Button}
                   rounded={'full'}
                   variant={'link'}
@@ -83,8 +85,8 @@ export default function Nav() {
                     size={'sm'}
                     src={"../../th__1.png"}
                   />
-                </MenuButton>
-                <MenuButton
+                </MenuButton> */}
+                {/* <MenuButton
                   as={Button}
                   rounded={'full'}
                   variant={'link'}
@@ -94,19 +96,42 @@ export default function Nav() {
                     size={'sm'}
                     src={"../../th__2.png"}
                   />
-                </MenuButton>
-                <MenuButton
+                  
+                </MenuButton> */}
+                <a href="/">
+                <AiFillHome 
+                rounded={'full'}
+                variant={'link'}
+                cursor={'pointer'}
+                size={'30px'}
+                /></a>
+                <AiOutlineShoppingCart
+                rounded={'full'}
+                variant={'link'}
+                cursor={'pointer'}
+                size={'30px'}
+               />
+                {/* <MenuButton
                   as={Button}
                   rounded={'full'}
                   variant={'link'}
                   cursor={'pointer'}
-                  minW={0}>
+                  minW={0}
+                  colorScheme='gray'
+                  >
+                    
                   <Avatar
                     size={'sm'}
                     src={''}
                   />
-                </MenuButton>
-                <MenuList alignItems={'center'}>
+                </MenuButton> */}
+                <AiOutlineUser
+                 rounded={'full'}
+                 variant={'link'}
+                 cursor={'pointer'}
+                 size={'30px'}
+                />
+                {/* <MenuList alignItems={'center'}>
                   <br />
                   <Center>
                   
@@ -124,7 +149,7 @@ export default function Nav() {
                   <MenuItem>Your Servers</MenuItem>
                   <MenuItem>Account Settings</MenuItem>
                   <MenuItem>Logout</MenuItem>
-                </MenuList>
+                </MenuList> */}
               </Menu>
             </Stack>
           </Flex>

@@ -1,15 +1,15 @@
 import React from 'react'
 import "./Tabs.css";
-import Books from "../Components/Books" 
+import Books from "./NewArrivals" 
 
 import {Box} from '@chakra-ui/react'
 
 
 const Tabs = () => {
   return (
-    <Box 
-    transition='transform 0.3s ease-in-out' display={{ base: "sm", sm: "xl" }} className='bg' flexDirection={{base:'column', md:'row'}} px={4}>
-        <a href="/newarrivals" className='link'>NewArrivals</a>
+    <Box m={2} 
+    transition='transform 0.3s ease-in-out' display={{ base: "sm", sm: "xl" }} className='bg' flexDirection={{base:'column', md:'row'}} px={4} mb={2}>
+        <a href="/newarrivals" className='link' mb="2px">NewArrivals</a>
         <a href="/books"  className='link'>MBBS</a>
         <a href="/postgraduation"  className='link'>Post Graduation</a>
         <a href='/SS'  className='link'>Super Speciality</a>
