@@ -12,7 +12,7 @@ export default function Books() {
     <>
    
     <Text textAlign={'center'} mt={10} fontSize={{base: '2xl', sm:'4xl'}} fontWeight={'bold'} color={'gray.600'}>
-      MBBS Books
+     New Arrivals
     </Text>
    <SimpleGrid columns={{base: 1, sm:3}} spacing={"2px"}>
     <BookCard/>
