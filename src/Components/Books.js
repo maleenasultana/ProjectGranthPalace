@@ -1,5 +1,5 @@
 
-import { Image, Box, Stack, HStack, Heading, Text, VStack, useColorModeValue, List, ListItem, ListIcon, Button } from '@chakra-ui/react';
+import { Image, Box, Stack, HStack, Heading, Text, VStack, useColorModeValue, List, ListItem, ListIcon, Button, ScaleFade } from '@chakra-ui/react';
 import { FaCheckCircle } from 'react-icons/fa';
 
 function PriceWrapper(props) {
@@ -42,13 +42,19 @@ export default function ThreeTierPricing() {
             <Text fontWeight="500" fontSize="2xl">
             Anatomy by Chaurasia
             </Text>
-            <HStack justifyContent={'center'} py={4}>
+            <HStack justifyContent={'center'} py={4}  
+            _hover={{
+              textDecoration: 'none',
+              bg: useColorModeValue('gray.300', 'gray.400'),
+              transform: 'scale(1.05)',
+             } }>
             <Image
             rounded={'lg'}
             height={60}
             width={180}
-            
-            objectFit={'cover'}
+           
+          
+            objectFit={'auto'}
             src={"https://mbbs.org.pk/wp-content/uploads/2021/12/Human-Anatomy-by-B-D-Chaurasias-Volume-1-Eight-Edition-1.jpg"}
             alt="#"
           />

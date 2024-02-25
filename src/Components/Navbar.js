@@ -105,12 +105,12 @@ export default function Nav() {
                 cursor={'pointer'}
                 size={'30px'}
                 /></a>
-                <AiOutlineShoppingCart
+                <a href="/bag"><AiOutlineShoppingCart
                 rounded={'full'}
                 variant={'link'}
                 cursor={'pointer'}
                 size={'30px'}
-               />
+               /></a>
                 {/* <MenuButton
                   as={Button}
                   rounded={'full'}

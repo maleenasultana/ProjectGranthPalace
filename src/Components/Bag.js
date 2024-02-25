@@ -31,14 +31,14 @@ function Cart() {
                             <h2>Cart Item</h2>
                             <img  src={cartItem.image} alt={cartItem.title} height="200" width="100px"/>
                           
-                             <p className='lead fw-bold'>${cartItem.price}
+                             <p className='lead fw-bold'>₹{cartItem.price}
 
-                            {cartItem.qty} x {cartItem.price} = ${cartItem.qty * cartItem.price}</p>
+                            {cartItem.qty} x {cartItem.price} = ₹{cartItem.qty * cartItem.price}</p>
 
                             <button className='btn btn-outline-danger me-4' >
                                  <i className='fa fa-minus'></i>
                              </button>
-                             {/* onClick={()=> handleClose(cartItem)} */}
+                             onClick={()=> handleClose(cartItem)}
                              <button className='btn btn-outline-primary'>
                                  <i className='fa fa-plus'></i>
                             </button>
@@ -74,9 +74,10 @@ function Cart() {
     }
   return (
     <>
-       {state.length === 0 && emptyCart()}
+       {/* {state.length === 0 && emptyCart()}
        {state.length !== 0 && state.map(cartItem)}
-       {state.length !== 0 && button()}
+       {state.length !== 0 && button()} */}
+       <Checkout/>
     </>
   )
 }

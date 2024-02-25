@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import Product from './Product'; 
-import Cart from './Cart';
+import Cart from './Bag';
 
 
 function Checkout() {
@@ -14,10 +14,10 @@ const productList =(product ) => {
     return(
       <li className='list-group-item d-flex justify-content-between 1h-sm'>
         <div>
-          <h6 className='my-0'>${product.title}</h6>
+          <h6 className='my-0'>₹{product.title}</h6>
         
         </div>
-        <span className='text-muted'>${product.price}</span>
+        <span className='text-muted'>₹{product.price}</span>
       </li>
     );
 }
@@ -28,14 +28,14 @@ const productList =(product ) => {
       <div className="col-md-5 col-lg-4 order-md-last">
         <h4 className="d-flex justify-content-between align-items-center mb-3">
           <span className="text-primary">Your cart</span>
-          <span className="badge bg-primary rounded-pill">{state.length}</span>
+          {/* <span className="badge bg-primary rounded-pill">{state?.length}</span> */}
         </h4>
-        <ul className="list-group mb-3">{state.map(productList)}
-          
+        {/* <ul className="list-group mb-3">{state.map(productList)} */}
+          <ul>
           
           <li className="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
-            <strong>${total}</strong>
+            <span>Total (Rupees)</span>
+            <strong>₹{total}</strong>
           </li>
         </ul>
 
@@ -102,7 +102,7 @@ const productList =(product ) => {
               <label htmlFor="country" className="form-label">Country</label>
               <select className="form-select" id="country" required="">
                 <option value="">Choose...</option>
-                <option>United States</option>
+                <option>India</option>
               </select>
               <div className="invalid-feedback">
                 Please select a valid country.
@@ -113,7 +113,7 @@ const productList =(product ) => {
               <label htmlFor="state" className="form-label">State</label>
               <select className="form-select" id="state" required="">
                 <option value="">Choose...</option>
-                <option>California</option>
+                <option></option>
               </select>
               <div className="invalid-feedback">
                 Please provide a valid state.
@@ -156,7 +156,7 @@ const productList =(product ) => {
             </div>
             <div className="form-check">
               <input id="paypal" name="paymentMethod" type="radio" className="form-check-input" required=""/>
-              <label className="form-check-label" htmlFor="paypal">PayPal</label>
+              <label className="form-check-label" htmlFor="paypal">Razor Pay</label>
             </div>
           </div>
 
@@ -197,7 +197,7 @@ const productList =(product ) => {
 
           <hr className="my-4"/>
 
-          <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <button className="w-100 btn btn-primary btn-lg" type="submit"><a href='/razorpay'>Continue to checkout</a></button>
         </form>
       </div>
     </div>

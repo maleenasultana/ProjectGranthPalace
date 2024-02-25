@@ -18,7 +18,9 @@ import MedicalCollege from './Components/Medical College';
 import Courses from './Components/Courses';
 import Bds from './Components/Bds';
 import Bams from './Components/Bams';
+import Bag from "./Components/Bag"
 import KnowyourCollege from './Components/KnowyourCollege';
+import RazorPay from './Components/RazorPay';
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
         <Route path="/knowyourcollege" element={<KnowyourCollege />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path='/bag' element={<Bag/>} />
+        <Route path='/razorpay' element={<RazorPay/>} />
       </Routes>
 
       <div>
