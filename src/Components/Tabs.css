@@ -1,7 +1,8 @@
 .bg{
-background-color: rgb(173, 115, 227);
+background-color:#8b83a5;
 display: flex;
 justify-content: space-between;
+
 }
 /* .link{
     margin-right: 25px;
@@ -19,9 +20,9 @@ justify-content: space-between;
     color: #040a2a;
     padding: 2px 6px;
     border: 1px;
-    border-bottom: whitesmoke;
-    border-color: rgb(226, 209, 209);
-    border-radius: 10px;
+    border-bottom: rgb(39, 35, 35);
+    border-color: rgb(71, 4, 57);
+    border-radius: 8px;
     width:auto;
     height: 25px;
     text-align: center;
@@ -29,15 +30,15 @@ justify-content: space-between;
     margin-bottom: 3px;
     background-image: linear-gradient(
  
-    #c0e8ed,
-    #54b3d6 80%,
-    #250f72 20%
+    #e1f2f5,
+    #8b26a4 90%,
+    #475d95 20%
   );
 
 
 }
 .link:hover{
-    color: rgb(237, 24, 152);
+    color: rgb(117, 40, 87);
     font-weight: bold;
     transform: scale(1.2);
 }

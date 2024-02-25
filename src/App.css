@@ -7,3 +7,11 @@
     height: 60px;
    
   }
+  .text{
+    background-image:radial-gradient(whitesmoke,pink);
+    color: brown;
+    font-size:medium;
+    font-weight:bold;
+    width: auto;
+    height: 29px;
+}

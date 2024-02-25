@@ -51,7 +51,7 @@ export default function Nav() {
   
   return (
     <>
-      <Box bg={useColorModeValue('gray.500', 'gray.900')} px={4}>
+      <Box className="navbg" backgroundImage={'radial-gradient(#54b3d6,#250f72)'} px={4}>
         
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box><img className='logo' src="../../gp_logo.png" alt="logo" />
@@ -103,6 +103,7 @@ export default function Nav() {
                 rounded={'full'}
                 variant={'link'}
                 cursor={'pointer'}
+                color="white"
                 size={'30px'}
                 /></a>
                 <a href="/bag"><AiOutlineShoppingCart
@@ -110,6 +111,7 @@ export default function Nav() {
                 variant={'link'}
                 cursor={'pointer'}
                 size={'30px'}
+                color="white"
                /></a>
                 {/* <MenuButton
                   as={Button}
@@ -130,6 +132,7 @@ export default function Nav() {
                  variant={'link'}
                  cursor={'pointer'}
                  size={'30px'}
+                 color="white"
                 />
                 {/* <MenuList alignItems={'center'}>
                   <br />
