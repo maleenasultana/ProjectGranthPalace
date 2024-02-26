@@ -34,7 +34,7 @@ export default function Contact() {
                        +919130448884
                       </Button>
                       <Button
-                      mx={3}
+                      marginLeft={9}
                         size="md"
                         height="48px"
                         width="220px"
