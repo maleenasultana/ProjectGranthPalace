@@ -14,6 +14,7 @@ import Bams from './Bams';
 import KnowyourCollege from './KnowyourCollege';
 import Contact from './Contact';
 import Footer from "./Footer";
+import About from './About';
 
 
 export default function WithVideoBackground() {
@@ -25,6 +26,7 @@ export default function WithVideoBackground() {
       h={'400px'}
       position="relative"
       overflow="hidden"
+      marginTop={1}
     >
       <video
         autoPlay
@@ -83,6 +85,7 @@ export default function WithVideoBackground() {
       </VStack>
     </Flex> 
     <Box>
+      <About/>
       <Features/>
        <Books/>
       <NewArrivals/>

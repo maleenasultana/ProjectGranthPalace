@@ -27,10 +27,11 @@ function App() {
     <>
       <Text />
       <Navbar />
-      <About />
+      
       <Tabs />
       <Routes>
         <Route path='/' element={<Hero/>} />
+        <Route path="/about" element= {<About />} />
         <Route path="/features" element={<Features />} />
         <Route path="/books" element={<Books />} />
         <Route path="/newarrivals" element={<NewArrivals />} />
