@@ -11,8 +11,8 @@ export default function Contact() {
           bg="#02054B"
           color="white"
           borderRadius="lg"
-          m={{ sm: 4, md: 16, lg: 10 }}
-          p={{ sm: 5, md: 5, lg: 16 }}>
+          m={{ sm: 3, md: 16, lg: 10 }}
+          p={{ sm: 6, md: 5, lg: 16 }}>
           <Box p={1}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
@@ -22,7 +22,7 @@ export default function Contact() {
                     Fill up the form below to contact us
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                    <VStack pl={0} spacing={3} alignItems="flex-start">
+                    <VStack pl={0} spacing={3} alignItems={{base:"flex-start", sm:"center"}}>
                       <Button
                         size="md"
                         height="48px"
@@ -41,7 +41,7 @@ export default function Contact() {
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<EmailIcon color="#1970F1" size="20px" marginLeft={'2'} />}>
+                        leftIcon={<EmailIcon color="#1970F1" size="20px" p={0} marginLeft={'2'} />}>
                         granthapalace@gmail.com
                       </Button>
                       <Button
@@ -59,7 +59,7 @@ export default function Contact() {
                   <HStack
                     mt={{ lg: 10, md: 10 }}
                     spacing={5}
-                    px={5}
+                    px={4}
                     alignItems="flex-start">
                    
                   </HStack>
