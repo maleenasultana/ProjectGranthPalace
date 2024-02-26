@@ -45,6 +45,7 @@ export default function Contact() {
                         granthapalace@gmail.com
                       </Button>
                       <Button
+                      alignItems={{base:"flex-start", sm:"center"}}
                         size="md"
                         height="48px"
                         width="200px"
