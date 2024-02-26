@@ -17,8 +17,8 @@ export default function Contact() {
             <Wrap spacing={{ base: 22, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Contact Us</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                  <Heading mx={8}>Contact Us</Heading>
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500" textAlign={'center'}>
                     Fill up the form below to contact us
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
@@ -34,7 +34,7 @@ export default function Contact() {
                        +919130448884
                       </Button>
                       <Button
-                      marginLeft={9}
+                       marginLeft={9}
                         size="md"
                         height="48px"
                         width="220px"
@@ -45,7 +45,6 @@ export default function Contact() {
                         granthapalace@gmail.com
                       </Button>
                       <Button
-                      alignItems={{base:'center', sm:"flex-start"}}
                         size="md"
                         height="48px"
                         width="200px"
