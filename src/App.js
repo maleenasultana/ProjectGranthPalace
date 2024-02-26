@@ -49,7 +49,7 @@ function App() {
       </Routes>
 
       <div>
-        <a href="https://wa.me/919975042526" target="_blank">
+        <a href="https://wa.me/919130448884" target="_blank">
           {' '}
           <img src={whatsappimage} alt="..." className="wimage" />
         </a>
