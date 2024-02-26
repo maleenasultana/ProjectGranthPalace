@@ -1,5 +1,6 @@
 'use client';
 import "./Footer.css" 
+import { PhoneIcon, EmailIcon, } from '@chakra-ui/icons';
 
 import React from 'react';
 import {
@@ -104,6 +105,12 @@ export default function LargeWithLogoCentered() {
             </Box>
             <Box as="a" href={'https://linkedin.com'}>
               LinkedIn
+            </Box>
+            <Box as="a" href={'tel:+919130448884'}>
+            <PhoneIcon/> Call Us
+            </Box>
+            <Box as="a" href={'mailto:granthapalace@gmail.com'}>
+            <EmailIcon /> Email Us
             </Box>
           </Stack>
         </SimpleGrid>

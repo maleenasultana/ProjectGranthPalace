@@ -31,7 +31,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<PhoneIcon color="#1970F1" size="20px" />}>
-                        +91-988888888
+                       +919130448884
                       </Button>
                       <Button
                         size="md"
@@ -41,7 +41,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<EmailIcon color="#1970F1" size="20px" />}>
-                        hello@abc.com
+                        granthapalace@gmail.com
                       </Button>
                       <Button
                         size="md"
@@ -97,7 +97,9 @@ export default function Contact() {
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
-                        <Button variant="solid" bg="#0D74FF" color="white" _hover={{}}>
+                        <Button variant="solid" bg="#0D74FF" color="white" _hover={{
+                          bgColor:'#02054B'
+                        }}>
                           Send Message
                         </Button>
                       </FormControl>
