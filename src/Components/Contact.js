@@ -5,16 +5,16 @@ import { AiOutlineUser } from "react-icons/ai";
 export default function Contact() {
   return (
     <>
-    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
+    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden" m={1} p={1}>
       <Flex>
         <Box
           bg="#02054B"
           color="white"
           borderRadius="lg"
           m={{ sm: 3, md: 16, lg: 10 }}
-          p={{ sm: 6, md: 5, lg: 16 }}>
+          p={{ sm: 7, md: 5, lg: 16 }}>
           <Box p={1}>
-            <Wrap spacing={{ base: 18, sm: 3, md: 5, lg: 20 }}>
+            <Wrap spacing={{ base: 22, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
                   <Heading>Contact Us</Heading>
