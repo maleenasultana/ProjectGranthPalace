@@ -14,7 +14,7 @@ export default function Contact() {
           m={{ sm: 3, md: 16, lg: 10 }}
           p={{ sm: 6, md: 5, lg: 16 }}>
           <Box p={1}>
-            <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
+            <Wrap spacing={{ base: 18, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
                   <Heading>Contact Us</Heading>
@@ -26,7 +26,7 @@ export default function Contact() {
                       <Button
                         size="md"
                         height="48px"
-                        width="200px"
+                        width="220px"
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
@@ -37,15 +37,15 @@ export default function Contact() {
                       mx={3}
                         size="md"
                         height="48px"
-                        width="200px"
+                        width="220px"
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<EmailIcon color="#1970F1" size="20px" p={0} marginLeft={'2'} />}>
+                        leftIcon={<EmailIcon color="#1970F1" size="20px" />}>
                         granthapalace@gmail.com
                       </Button>
                       <Button
-                      alignItems={{base:"flex-start", sm:"center"}}
+                      alignItems={{base:'center', sm:"flex-start"}}
                         size="md"
                         height="48px"
                         width="200px"
@@ -62,7 +62,7 @@ export default function Contact() {
                     spacing={5}
                     px={4}
                     alignItems="flex-start">
-                   
+                {/* bottom icons come here if want */}
                   </HStack>
                 </Box>
               </WrapItem>
