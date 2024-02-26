@@ -1,6 +1,6 @@
 'use client';
-import "./Footer.css" 
-import { PhoneIcon, EmailIcon, } from '@chakra-ui/icons';
+import './Footer.css';
+import { PhoneIcon, EmailIcon } from '@chakra-ui/icons';
 
 import React from 'react';
 import {
@@ -13,14 +13,21 @@ import {
   Tag,
   useColorModeValue,
 } from '@chakra-ui/react';
-import Contact from "./Contact";
-import Policy from "./Policy";
-import Features from './Features'
-import About from "./About";
-const Logo = (props) => {
+import Contact from './Contact';
+import Policy from './Policy';
+import Features from './Features';
+import About from './About';
+const Logo = props => {
   return (
-    <img src="../../gp_logo.png" alt="logo" className="logo" height={32} viewBox="0 0 120 28" xmlns="" {...props}/>
-     
+    <img
+      src="../../gp_logo.png"
+      alt="logo"
+      className="logo"
+      height={32}
+      viewBox="0 0 120 28"
+      xmlns=""
+      {...props}
+    />
   );
 };
 
@@ -64,23 +71,31 @@ export default function LargeWithLogoCentered() {
             <Box as="a" href={'#'}>
               Pricing
             </Box>
-            
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
-           
-           
+
             <Box as="a" href={'./Contact'}>
               Careers
             </Box>
             <Box as="a" href={'./Contact'}>
               Contact Us
             </Box>
-            
+            <Box as="a" href={'tel:+919130448884'}>
+              <PhoneIcon /> Call Us
+            </Box>
+            <Box as="a" href={'mailto:granthapalace@gmail.com'}>
+              <EmailIcon /> Email Us
+            </Box>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Legal</ListHeader>
-            <Box as="a" href={'https://www.wonder.legal/in/modele/website-cookies-policy?msclkid=89102818a8081c0639a34dc16bce4f2e'}>
+            <Box
+              as="a"
+              href={
+                'https://www.wonder.legal/in/modele/website-cookies-policy?msclkid=89102818a8081c0639a34dc16bce4f2e'
+              }
+            >
               Cookies Policy
             </Box>
             <Box as="a" href={Policy}>
@@ -89,28 +104,26 @@ export default function LargeWithLogoCentered() {
             <Box as="a" href={'#'}>
               Terms of Service
             </Box>
-            
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Follow Us</ListHeader>
-            <Box as="a" href={'https://www.bing.com/ck/a?!&&p=583db211f445a4c6JmltdHM9MTcwODczMjgwMCZpZ3VpZD0xZWZiNTM3Zi02OWFhLTY4ZTEtM2YzMC00MDEwNjhmNzY5ZjUmaW5zaWQ9NTIyNQ&ptn=3&ver=2&hsh=3&fclid=1efb537f-69aa-68e1-3f30-401068f769f5&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1'}>
+            <Box
+              as="a"
+              href={
+                'https://www.bing.com/ck/a?!&&p=583db211f445a4c6JmltdHM9MTcwODczMjgwMCZpZ3VpZD0xZWZiNTM3Zi02OWFhLTY4ZTEtM2YzMC00MDEwNjhmNzY5ZjUmaW5zaWQ9NTIyNQ&ptn=3&ver=2&hsh=3&fclid=1efb537f-69aa-68e1-3f30-401068f769f5&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1'
+              }
+            >
               Facebook
             </Box>
             <Box as="a" href={'https://twitter.com/home'}>
               Twitter
             </Box>
-            
+
             <Box as="a" href={'https://instagram.com/'}>
               Instagram
             </Box>
             <Box as="a" href={'https://linkedin.com'}>
               LinkedIn
-            </Box>
-            <Box as="a" href={'tel:+919130448884'}>
-            <PhoneIcon/> Call Us
-            </Box>
-            <Box as="a" href={'mailto:granthapalace@gmail.com'}>
-            <EmailIcon /> Email Us
             </Box>
           </Stack>
         </SimpleGrid>
@@ -136,7 +149,7 @@ export default function LargeWithLogoCentered() {
           <Logo />
         </Flex>
         <Text pt={6} fontSize={'sm'} textAlign={'center'}>
-          Copyrights © 2024.  All rights reserved
+          Copyrights © 2024. All rights reserved
         </Text>
       </Box>
     </Box>

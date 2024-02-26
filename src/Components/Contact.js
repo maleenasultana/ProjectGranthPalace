@@ -1,6 +1,6 @@
 import { Container, Flex, Box, Heading, Text, IconButton, Button, VStack, HStack, Wrap, WrapItem, FormControl, FormLabel, Input, InputGroup, InputLeftElement, Textarea } from '@chakra-ui/react';
 import { PhoneIcon, EmailIcon, AtSignIcon,AddIcon} from '@chakra-ui/icons';
-
+import { AiOutlineUser } from "react-icons/ai";
 
 export default function Contact() {
   return (
@@ -17,9 +17,9 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Contact</Heading>
+                  <Heading>Contact Us</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                    Fill up the form below to contact
+                    Fill up the form below to contact us
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
@@ -34,13 +34,14 @@ export default function Contact() {
                        +919130448884
                       </Button>
                       <Button
+                      mx={3}
                         size="md"
                         height="48px"
                         width="200px"
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<EmailIcon color="#1970F1" size="20px" />}>
+                        leftIcon={<EmailIcon color="#1970F1" size="20px" marginLeft={'2'} />}>
                         granthapalace@gmail.com
                       </Button>
                       <Button
@@ -72,7 +73,7 @@ export default function Contact() {
                         <FormLabel color={'gray.400'}>Your Name</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement pointerEvents="none">
-                            <AddIcon color="gray.800" />
+                          <AiOutlineUser color="gray.800" />
                           </InputLeftElement>
                           <Input type="text" size="md" />
                         </InputGroup>
