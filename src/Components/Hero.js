@@ -59,26 +59,7 @@ export default function WithVideoBackground() {
             {/* Your content here */}
           </Text>
           <Flex direction={'row'}>
-          {/* <Button
-              bg={'whiteAlpha.200'}
-              rounded={'full'}
-              color={'white'}
-              _hover={{ bg: 'whiteAlpha.500' }}
-              onClick={redirectToPage1}
-              px={4}
-            >
-              Contact Us
-            </Button>
-
-            <Button
-              bg={'whiteAlpha.200'}
-              rounded={'full'}
-              color={'white'}
-              _hover={{ bg: 'whiteAlpha.500' }}
-              onClick={redirectToPage}
-            >
-           About Us
-            </Button> */}
+          
 
           </Flex>
         </VStack>

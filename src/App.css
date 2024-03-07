@@ -15,3 +15,18 @@
     width: auto;
     height: 29px;
 }
+.card-img-top{
+ margin-left: '120px';
+  
+}
+.card-img-top:hover{
+  transform: scale(1.15);
+  transition: width 2s, height 4s;
+}
+.card-title{
+  margin-left: '20px';
+}
+.card-block{
+  justify-content: center;
+  
+}

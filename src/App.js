@@ -21,11 +21,12 @@ import Bams from './Components/Bams';
 import Bag from "./Components/Bag"
 import KnowyourCollege from './Components/KnowyourCollege';
 import RazorPay from './Components/RazorPay';
+// import Card from './Components/Card';
 
 function App() {
   return (
     <>
-      <Text />
+      {/* <Text /> */}
       <Navbar />
       
       <Tabs />
@@ -34,7 +35,7 @@ function App() {
         <Route path="/about" element= {<About />} />
         <Route path="/features" element={<Features />} />
         <Route path="/books" element={<Books />} />
-        <Route path="/newarrivals" element={<NewArrivals />} />
+        {/* <Route path="/newarrivals" element={<NewArrivals />} /> */}
         <Route path="/postgraduation" element={<PostGraduation />} />
         <Route path="/ss" element={<SS />} />
         <Route path="/medicalcollege" element={<MedicalCollege />} />
@@ -54,6 +55,7 @@ function App() {
           <img src={whatsappimage} alt="..." className="wimage" />
         </a>
       </div>
+      {/* <Card/> */}
     </>
   );
 }

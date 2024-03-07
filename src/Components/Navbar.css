@@ -7,3 +7,51 @@
     height: 20px;
     color: whitesmoke;
 }
+.search_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.search_box{
+    padding: 10px;
+    flex: 1;
+    border: none;
+    outline-width: 0;
+    border-radius: 5px 0  0 5px;
+    height: 40px;
+    margin-right: auto;
+    width: 400px;
+
+
+}
+.btn{
+    margin-right: 0;  
+}
+.btn:hover{
+color: brown;
+transform: scale(1.05);
+background: "transparent";
+}
+.alink{
+    color: whitesmoke;
+    align-items: center;
+    width: 90px;
+}
+.alink:hover{
+    color:brown;
+    transform: scale(1.05);
+    background-color: "gray.100";
+}
+.blink{
+    color: whitesmoke;
+    align-items: 'center';
+    width: 170px;
+ 
+}
+.blink:hover{
+    color:brown;
+    transform: scale(1.05);
+    background-color: "gray.100";
+}
